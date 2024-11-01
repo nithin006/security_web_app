@@ -36,7 +36,7 @@ function Footer() {
         <hr className="border-light" />
         <Row>
           <Col className="text-center">
-            <p className="mb-0">&copy; {new Date().getFullYear()} MyWebsite. All rights reserved.</p>
+            <p className="mb-0">&copy; {new Date().getFullYear()} AV Security Services. All rights reserved.</p>
           </Col>
         </Row>
       </Container>
