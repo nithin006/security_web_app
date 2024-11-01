@@ -5,7 +5,17 @@ function Header() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">AV Security Services</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img
+            src="../AVicon.jpeg" // Adjust the path if necessary
+            alt="Icon"
+            width="30" // Set width to desired size
+            height="30" // Set height to desired size
+            className="me-2"
+            style={{ borderRadius: "50%" }}
+          />
+          AV Security Services
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
