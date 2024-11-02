@@ -13,23 +13,20 @@
   
   .clients-grid {
     display: flex;
-    justify-content: center; /* Centers the grid horizontally */
-    align-items: center;
     flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 1.5rem; /* Spacing between the items */
+    gap: 1.5rem;
+    justify-content: center; /* Centers the grid in the container */
   }
   
   .client-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     transition: transform 0.3s;
-    flex-basis: 22%; /* Adjusted to ensure four cards fit per row with some gap */
-    max-width: 22%; /* Ensure consistency across different screen sizes */
+    max-width: 200px;
+    text-align: center;
+    flex: 1 1 calc(25% - 1.5rem); /* Default: 4 cards per row */
   }
   
   .client-card:hover {
@@ -48,13 +45,30 @@
     font-weight: bold;
   }
   
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .client-card {
+      flex: 1 1 calc(33.33% - 1.5rem); /* 3 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .client-card {
+      flex: 1 1 calc(50% - 1.5rem); /* 2 cards per row on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .client-card {
+      flex: 1 1 100%; /* 1 card per row on extra small screens */
+    }
+  }
+    
 
 /* Services */
-
 .services {
-    
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #f8f9fa;
   }
   
@@ -65,21 +79,32 @@
   }
   
   .services-grid {
-    
-    display: flex;
-    align-items: center;
-     /* Ensures three columns per row */
-    gap: 1.5rem;
-    justify-content: center; /* Centers the grid in the container */
+    display: grid;
+    gap: 1.0rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards per row */
+  }
+  
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
   }
   
   .service-card {
+    margin-left: 50px;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
-    max-width: 350px; /* Ensures consistent width for each card */
+    max-width: 350px;
     text-align: center;
   }
   
@@ -107,4 +132,4 @@
     font-size: 0.9rem;
     color: #666;
   }
-    
+  
