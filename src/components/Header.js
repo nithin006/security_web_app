@@ -10,7 +10,7 @@ function Header() {
           <img
             src="../AVicon.jpeg" // Adjust the path if necessary
             alt="Icon"
-            width="100" // Set width to desired size
+            width="50" // Set width to desired size
             height="50" // Set height to desired size
             className="me-2"
             // style={{ borderRadius: "50%" }}
