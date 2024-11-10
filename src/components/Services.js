@@ -5,19 +5,19 @@ const services = [
   {
     id: 1,
     title: 'Office Security',
-    description: 'Protect your Office from threats and vulnerabilities.',
+    description: 'Protect your workspace with professional on-site personnel, access control systems, and surveillance for a safe, productive environment.',
     image: '../office.webp', // Replace with actual image path
   },
   {
     id: 2,
     title: 'Home Security',
-    description: 'Protect your Office from threats and vulnerabilities',
+    description: 'Safeguard your home and loved ones with advanced security solutions, including 24/7 monitoring and emergency response.',
     image: '../house.webp', // Replace with actual image path
   },
   {
     id: 3,
     title: 'Personal Security',
-    description: 'Protect you from threats and vulnerabilities',
+    description: 'Offering discreet personal security for individuals seeking additional protection, customized to suit your lifestyle and needs.',
     image: '../bodyguard.webp', // Replace with actual image path
   },
   

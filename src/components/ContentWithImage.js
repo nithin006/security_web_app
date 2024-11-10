@@ -16,11 +16,12 @@ function ContentWithImage() {
         <Col md={6}>
           <h2>Our Mission</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet
-            accumsan urna. Donec scelerisque augue vel nisi placerat, eu sodales eros
-            iaculis. Vivamus maximus velit ut ligula facilisis dapibus. Sed id fringilla
-            magna. Curabitur ut ullamcorper orci, nec tincidunt leo. Vivamus ac quam at
-            nulla sagittis fermentum.
+          Our mission is to provide comprehensive security solutions that empower peace of mind for individuals, families, and businesses.
+           We are dedicated to upholding the highest standards of professionalism, reliability,
+           and innovation to ensure the safety of our clients in every environment. By
+           combining advanced technology with personalized service, we strive to create secure, trustworthy spaces where our clients can focus on what 
+          matters most. Our commitment to excellence drives us to continually enhance our solutions, foster trust,
+           and build lasting partnerships within the communities we serve.
           </p>
         </Col>
       </Row>

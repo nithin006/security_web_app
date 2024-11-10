@@ -9,8 +9,9 @@ function Footer() {
           <Col md={4}>
             <h5>About Us</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet
-              accumsan urna. Donec scelerisque.
+            We are a trusted security provider offering tailored solutions for office security, home protection,
+             and personal safety. With advanced technology, highly trained personnel, and 24/7 support, we’re dedicated to
+             delivering comprehensive protection and peace of mind for all your security needs.
             </p>
           </Col>
 
@@ -26,11 +27,12 @@ function Footer() {
 
           <Col md={4}>
             <h5>Follow Us</h5>
-            <div>
-              <a href="https://facebook.com" className="text-light me-3">Facebook</a>
-              <a href="https://twitter.com" className="text-light me-3">Twitter</a>
-              <a href="https://instagram.com" className="text-light">Instagram</a>
-            </div>
+            <ul className='list-unstyled'>
+              <li><a href="https://facebook.com" className="text-light me-3">Facebook</a></li>
+              <li><a href="https://twitter.com" className="text-light me-3">Twitter</a></li>
+              <li><a href="https://instagram.com" className="text-light">Instagram</a></li>
+              </ul>
+            
           </Col>
         </Row>
         <hr className="border-light" />

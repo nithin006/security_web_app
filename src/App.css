@@ -1,4 +1,7 @@
+
+
 /* OurClients */
+
 .our-clients {
     text-align: center;
     padding: 2rem;
@@ -98,7 +101,7 @@
   }
   
   .service-card {
-    margin-left: 50px;
+    
     background: #fff;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -132,4 +135,9 @@
     font-size: 0.9rem;
     color: #666;
   }
+
+  /* AboutUs */
+
+
+  
   

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
+
 function Header() {
   return (
     <Navbar bg="light" expand="lg" >
@@ -20,7 +21,7 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto"> {/* Aligned to the left */}
             <Nav.Link href="../ImageCarousel" className="ms-3" style={{ fontWeight: "bold" }}>Home</Nav.Link>
-            <Nav.Link href="#about" className="ms-3" style={{ fontWeight: "bold" }}>About</Nav.Link>
+            <Nav.Link href="#AboutUs" className="ms-3" style={{ fontWeight: "bold" }}>About</Nav.Link>
             <Nav.Link href="#services" className="ms-3" style={{ fontWeight: "bold" }}>Services</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown" className="ms-3" style={{ fontWeight: "bold" }}>
               <NavDropdown.Item href="#contact" >Contact</NavDropdown.Item>
