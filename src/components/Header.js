@@ -26,7 +26,7 @@ function Header() {
               <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
               <NavDropdown.Item href="#blog">Blog</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#faq">FAQ</NavDropdown.Item>
+              <NavDropdown.Item href="#faq">Locaton</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
