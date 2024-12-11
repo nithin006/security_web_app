@@ -138,6 +138,89 @@
 
   /* AboutUs */
 
+/* Home */
+.home-para1 {
+  margin: 10px 100px; /* Default margin for larger screens */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  
-  
+.home-para1 > div {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px; 
+}
+
+.sp {
+  color: #007bff;
+}
+
+#pic {
+  margin: 20px auto;
+  display: block;
+  max-width: 90%; 
+  height: auto; 
+}
+
+.hp1 {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-para1 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items for better layout */
+    margin: 20px; /* Add more space for smaller screens */
+  }
+
+  #pic {
+    margin: 20px auto;
+    height: 200px; 
+    max-width: 100%; 
+  }
+
+  .home-para1 > div {
+    margin: 15px auto; /* Slightly increase spacing */
+  }
+
+  h1.hp {
+    font-size: 1.5rem; /* Reduce font size for better readability */
+    text-align: center; /* Center align headings */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    line-height: 1.6; /* Increase line spacing for better readability */
+    text-align: justify; /* Justify text for clean alignment */
+    padding: 0 15px; /* Add padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-para1 {
+    padding: 10px; /* Reduce overall padding */
+    align-items: center; /* Center items */
+  }
+
+  #pic {
+    height: 150px; 
+    margin-bottom: 20px; /* Add spacing below image */
+  }
+
+  .home-para1 > div {
+    margin: 10px auto; 
+  }
+
+  h1.hp {
+    font-size: 1.2rem; /* Further reduce font size */
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust text size for readability */
+    line-height: 1.4; 
+    padding: 0 10px; 
+  }
+}
