@@ -40,12 +40,12 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center text-lg-start">
-            <Nav.Link href="../ImageCarousel" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>Home</Nav.Link>
-            <Nav.Link href="#AboutUs" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>About</Nav.Link>
-            <Nav.Link href="#services" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>Contact</Nav.Link>
+            <Nav.Link href="/" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>Home</Nav.Link>
+            <Nav.Link href="/" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>About</Nav.Link>
+            <Nav.Link href="/" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>Contact</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown" className="ms-lg-3 my-1" style={{ fontWeight: "bold" }}>
-              <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
-              <NavDropdown.Item href="#blog">Blog</NavDropdown.Item>
+              <NavDropdown.Item href="/">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="/">Blog</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
                 <a 
@@ -70,7 +70,12 @@ function Header() {
       <br />
       <span className="sp">{displayText}</span>
     </h1>
-
+    <h4 style={{ fontFamily: 'Arial, sans-serif', color: '#333', fontStyle: 'italic', margin: '10px 0' }}>
+        Contact : <strong style={{ color: 'red', fontStyle: 'italic' }}>9876543210</strong>
+      </h4>
+      <h4 style={{ fontFamily: 'Arial, sans-serif', color: '#333', fontStyle: 'italic', margin: '10px 0' }}>
+        Email : <strong style={{ color: 'red', fontStyle: 'italic' }}>abc@gmail.com</strong>
+      </h4>
     <p>
       At <strong>AV Security Services</strong>, our mission is to deliver top-tier security solutions for homes, offices, and personal safety. 
       With a team of trained professionals, cutting-edge technology, and a commitment to excellence, we ensure peace of mind for our clients. 
