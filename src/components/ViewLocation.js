@@ -31,7 +31,7 @@ function ViewLocation() {
             textDecoration: 'none',
             cursor: 'pointer',
           }}
-        ></a>
+        >View Location</a>
       </div>
     </div>
   );
