@@ -224,3 +224,13 @@
     padding: 0 10px; 
   }
 }
+@media (max-width: 480px) {
+  h4 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  h4 strong {
+    color: blue; /* Example of adapting styles for smaller screens */
+  }
+}

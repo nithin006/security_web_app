@@ -1,9 +1,12 @@
 import React from 'react';
+import NavbarComponent from './Navbar';
 
 function ViewLocation() {
   const mapUrl = "https://www.google.co.in/maps/place/Paradise+Biryani+%7C+Padmarao+Nagar/@17.4312043,78.4878031,14z/data=!4m6!3m5!1s0x3bcb9b89bf6b4f2b:0xc97632e244957619!8m2!3d17.4312036!4d78.5051256!16s%2Fg%2F11s8hgpzgt?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D";
 
   return (
+    <>
+    <NavbarComponent/>
     <div style={{ textAlign: 'center', padding: '20px' }}>
       <h1>Location</h1>
       <p>Click on the map to navigate to Google Maps for detailed directions.</p>
@@ -34,6 +37,8 @@ function ViewLocation() {
         >View Location</a>
       </div>
     </div>
+    </>
+
   );
 }
 

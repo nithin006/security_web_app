@@ -1,24 +1,9 @@
-import React from 'react';
-
-const ContactDetails = () => {
-  return (
-    <section style={styles.container}>
-      <h2 style={styles.heading}>Contact Us</h2>
-      <p style={styles.text}>
-        Feel free to reach out to us for any inquiries or assistance. We are here to help!
-      </p>
-      <ul style={styles.contactList}>
-        <li>Email: <a href="mailto:contact@yourcompany.com" style={styles.link}>contact@yourcompany.com</a></li>
-        <li>Phone: <a href="tel:+1234567890" style={styles.link}>+123 456 7890</a></li>
-        <li>Address: 123 Secure Lane, Safety City, SC 12345</li>
-      </ul>
-    </section>
-  );
-};
+import React, { useEffect, useState } from 'react';
+import Navbar from './Navbar';
 
 const AboutUs = () => {
   return (
-    <section style={styles.container}>
+    <section style={{ ...styles.container }}>
       <h2 style={styles.heading}>About Us</h2>
       <p style={styles.text}>
         We are a trusted security and service provider committed to protecting offices, homes, and individuals. 
@@ -46,73 +31,117 @@ const OurServices = () => {
 };
 
 const MainComponent = () => {
+  const [containerStyles, setContainerStyles] = useState(styles.container);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width >= 1024) {
+        setContainerStyles({
+          ...styles.container,
+          maxWidth: '800px',
+        });
+      } else if (width >= 768) {
+        setContainerStyles({
+          ...styles.container,
+          maxWidth: '600px',
+        });
+      } else {
+        setContainerStyles({
+          ...styles.container,
+          maxWidth: '90%',
+        });
+      }
+    };
+
+    handleResize(); // Set initial styles
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div>
-      <AboutUs />
-      <OurServices />
-      <ContactDetails />
+    <div style={styles.mainWrapper}>
+      <Navbar />
+      <div style={containerStyles}>
+        <AboutUs />
+        <OurServices />
+      </div>
     </div>
   );
 };
 
 const styles = {
+  mainWrapper: {
+    minHeight: '100vh',
+    
+    fontFamily: '"Roboto", sans-serif',
+  },
   container: {
-    padding: '1.5rem',
-    borderRadius: '8px',
-    width: '90%',
-    maxWidth: '800px',
+    padding: '2rem',
+    background: 'white',
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+    borderRadius: '10px',
     margin: '1rem auto',
     textAlign: 'center',
+    maxWidth: '90%',
+    animation: 'fadeIn 1s ease-in-out',
   },
   heading: {
     fontSize: '2rem',
-    color: '#333',
+    color: '#444',
     marginBottom: '1rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
   },
   text: {
-    fontSize: '1.1rem',
-    textAlign: 'left',
-    lineHeight: '1.6',
-    color: '#555',
-  },
-  contactList: {
-    listStyleType: 'none',
-    padding: 0,
+    fontSize: '1.2rem',
     textAlign: 'left',
     lineHeight: '1.8',
-    color: '#555',
+    color: '#666',
   },
   servicesList: {
-    listStyleType: 'disc',
+    listStyleType: 'circle',
     paddingLeft: '20px',
     textAlign: 'left',
     lineHeight: '1.8',
-    color: '#555',
+    color: '#333',
+    fontSize: '1.1rem',
   },
-  link: {
-    color: '#007bff',
-    textDecoration: 'none',
-  },
-  '@media (min-width: 768px)': {
-    container: {
-      maxWidth: '600px',
+  '@keyframes fadeIn': {
+    from: {
+      opacity: 0,
     },
+    to: {
+      opacity: 1,
+    },
+  },
+  '@media (max-width: 768px)': {
     heading: {
       fontSize: '1.8rem',
     },
     text: {
       fontSize: '1rem',
     },
-  },
-  '@media (min-width: 1024px)': {
-    container: {
-      maxWidth: '800px',
+    servicesList: {
+      fontSize: '0.9rem',
     },
+  },
+  '@media (max-width: 480px)': {
     heading: {
-      fontSize: '2.2rem',
+      fontSize: '1.5rem',
     },
     text: {
-      fontSize: '1.2rem',
+      fontSize: '0.9rem',
+    },
+    servicesList: {
+      fontSize: '0.8rem',
+    },
+    container: {
+      padding: '1rem',
     },
   },
 };

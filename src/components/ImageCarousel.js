@@ -13,8 +13,8 @@ function ImageCarousel() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First Slide Label</h3>
-            <p>This is the first slide description.</p>
+            <h3>Expert Security Personnel</h3>
+            <p>Highly trained security guards ensuring the safety of your premises.</p>
           </Carousel.Caption>
         </Carousel.Item>
         
@@ -25,8 +25,8 @@ function ImageCarousel() {
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Second Slide Label</h3>
-            <p>This is the second slide description.</p>
+            <h3>Advanced Surveillance Technology</h3>
+            <p>State-of-the-art security systems to monitor and protect your property 24/7.</p>
           </Carousel.Caption>
         </Carousel.Item>
         
@@ -37,8 +37,8 @@ function ImageCarousel() {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third Slide Label</h3>
-            <p>This is the third slide description.</p>
+            <h3>Customized Security Solutions</h3>
+            <p>Tailored security services that meet your unique needs and requirements.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
