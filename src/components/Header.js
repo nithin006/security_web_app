@@ -35,10 +35,10 @@ function Header() {
           </h1>
           <p>
             <h4 style={{ fontFamily: 'Arial, sans-serif', color: '#333', fontStyle: 'italic' }}>
-              Contact: <strong style={{ color: 'red', fontStyle: 'italic' }}>9876543210</strong>
+              Contact: <strong style={{ color: 'red', fontStyle: 'italic' }}>9347794484</strong>
             </h4>
             <h4 style={{ fontFamily: 'Arial, sans-serif', color: '#333', fontStyle: 'italic' }}>
-              Email: <strong style={{ color: 'red', fontStyle: 'italic' }}>abc@gmail.com</strong>
+              Email: <strong style={{ color: 'red', fontStyle: 'italic' }}>avsecurityservices@gmail.com</strong>
             </h4>
             At <strong>AV Security Services</strong>, our mission is to deliver top-tier security solutions for homes, offices, and personal safety. 
             With a team of trained professionals, cutting-edge technology, and a commitment to excellence, we ensure peace of mind for our clients. 
