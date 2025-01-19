@@ -52,6 +52,16 @@ function Header() {
             id="pic"
             style={{ borderRadius: "10px" }}
           />
+          <h1
+          style={{
+            color: '#3498db',
+            fontSize: '1.5em',
+            textAlign: 'center',
+            margin: '10px',
+            padding: '10px',
+            
+          }}
+          >AV Security Services</h1>
         </div>
       </div>
     </>
